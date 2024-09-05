@@ -262,8 +262,8 @@
   }
 }
 .section_about-wrapper--content_text-desc span {
-  color: transparent;
-  -webkit-text-stroke: 1px #111;
+  color: #f9f9f9;
+  text-shadow: -1px 0 #2E3140, 0 1px #2E3140, 1px 0 #2E3140, 0 -1px #2E3140;
 }
 .section_about-wrapper--content_statics {
   display: flex;
