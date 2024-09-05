@@ -1,0 +1,220 @@
+.section_about {
+    padding-top: 125px;
+
+    &-wrapper {
+        &--title {
+            display: flex;
+            justify-content: center;
+        }
+
+        svg {
+            @media screen and (max-width: 480px) {
+                width: 200px;
+                height: 50px;
+            }
+        }
+
+        &--content {
+            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 137px;
+
+            @media screen and (max-width:1024px) {
+                gap: 80px;
+            }
+
+            @media screen and (max-width: 768px) {
+                gap: 70px;
+            }
+
+            @media screen and (max-width: 480px) {
+                padding-top: 40px;
+                gap: 50px;
+            }
+
+            &_text {
+                font-size: 36px;
+                line-height: 110%;
+
+                @media screen and (max-width: 1280px) {
+                    font-size: 30px;
+                }
+
+                @media screen and (max-width:1024px) {
+                    font-size: 27px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 480px) {
+                    font-size: 16px;
+                }
+
+                &-title {
+                    display: flex;
+                    gap: 23px;
+
+                    .line {
+                        width: 2px;
+                        height: 75px;
+                        background: #FE0;
+                    }
+
+                    .title {
+                        text-transform: none;
+                    }
+                }
+
+                &-desc {
+                    margin-top: 70px;
+
+                    @media screen and (max-width: 480px) {
+                        margin-top: 30px;
+                        width: 98%;
+                    }
+
+                    span {
+                        color: transparent;
+                        -webkit-text-stroke: 1px #111;
+                    }
+                }
+            }
+
+            &_statics {
+                display: flex;
+                gap: 115px;
+
+                @media screen and (max-width:1024px) {
+                    gap: 50px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 80px;
+                }
+
+                @media screen and (max-width: 480px) {
+                    gap: 50px;
+                }
+
+                &-left {
+                    width: 100%;
+
+                    @media screen and (max-width:1024px) {
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        width: 98%;
+                    }
+
+                    .text {
+                        font-size: 20px;
+
+                        @media screen and (max-width: 1280px) {
+                            font-size: 18px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 15px;
+                        }
+
+                        @media screen and (max-width: 480px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &-right {
+                    display: flex;
+                    gap: 132px;
+                    width: 100%;
+
+                    @media screen and (max-width:1024px) {
+                        gap: 70px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        justify-content: flex-start;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        gap: 50px;
+                    }
+
+                    .right,
+                    .left {
+                        width: 100%;
+
+                        @media screen and (max-width:768px) {
+                            width: 20%;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            width: 100%;
+                        }
+
+                        .title {
+                            font-size: 64px;
+                            color: #9DB8D8;
+                            line-height: 50px;
+                            margin-bottom: 8px;
+
+                            @media screen and (max-width: 1280px) {
+                                font-size: 55px;
+                            }
+
+                            @media screen and (max-width: 1024px) {
+                                font-size: 45px;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 45px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                font-size: 40px;
+                            }
+                        }
+
+                        .subtitle {
+                            color: #2E3140;
+                            font-size: 16px;
+                            line-height: 150%;
+
+                            @media screen and (max-width: 1280px) {
+                                font-size: 15px;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 14px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                    .right {
+                        @media screen and (max-width:768px) {
+                            width: 20%;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            width: 100%;
+                        }
+
+                        .subtitle {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
