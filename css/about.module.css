@@ -66,15 +66,7 @@
 }
 .section_about-wrapper--content_text-title {
   display: flex;
-  gap: 23px;
-}
-.section_about-wrapper--content_text-title .line {
-  width: 2px;
-  height: 75px;
-  background: #FE0;
-}
-.section_about-wrapper--content_text-title .title {
-  text-transform: none;
+  align-items: center;
 }
 .section_about-wrapper--content_text-desc {
   margin-top: 70px;

@@ -82,13 +82,8 @@ html body ul {
 
 .title {
     font-size: 36px;
-    text-transform: uppercase;
     line-height: 110%;
     z-index: 1;
-
-    span {
-        color: #9DB8D8;
-    }
 
     @media screen and (max-width: 1280px) {
         font-size: 30px;
@@ -123,4 +118,11 @@ html body ul {
     @media screen and (max-width: 480px) {
         font-size: 14px;
     }
+}
+
+.line {
+    width: 2px;
+    height: 75px;
+    background: #FE0;
+    margin-right: 23px;
 }

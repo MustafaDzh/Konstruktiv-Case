@@ -61,17 +61,7 @@
 
                 &-title {
                     display: flex;
-                    gap: 23px;
-
-                    .line {
-                        width: 2px;
-                        height: 75px;
-                        background: #FE0;
-                    }
-
-                    .title {
-                        text-transform: none;
-                    }
+                    align-items: center;
                 }
 
                 &-desc {
