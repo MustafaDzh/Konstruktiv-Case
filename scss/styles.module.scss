@@ -1,0 +1,120 @@
+@import "./hero.module.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html body {
+    cursor: default;
+    background-color: #F9F9F9;
+    color: #2E3140;
+    overflow-x: hidden;
+}
+
+.unbounded-300 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.unbounded-400 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.unbounded-500 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.unbounded-600 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.unbounded-700 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+html body a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html body ul {
+    list-style: none;
+}
+
+.section {
+    width: 98%;
+    max-width: calc(1440px - 2%);
+    margin: 0 auto;
+    padding: 0px 50px;
+
+    @media screen and (max-width:350px) {
+        padding: 0px 10px;
+    }
+}
+
+.title {
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 110%;
+    z-index: 1;
+
+    span {
+        color: #9DB8D8;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width:1024px) {
+        font-size: 27px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
+}
+
+.desc {
+    font-size: 20px;
+    line-height: 130%;
+    z-index: 1;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 14px;
+    }
+}
