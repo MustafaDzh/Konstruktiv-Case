@@ -183,7 +183,14 @@
 }
 
 .section_about {
-  padding-top: 125px;
+  padding-top: 87px;
+  border-bottom: 1px solid rgb(107, 152, 133);
+  padding-bottom: 247px;
+}
+@media screen and (max-width: 480px) {
+  .section_about {
+    padding-bottom: 150px;
+  }
 }
 .section_about-wrapper--title {
   display: flex;
@@ -420,6 +427,95 @@
 }
 .section_about-wrapper--content_statics-right .right .subtitle {
   width: 100%;
+}
+
+.section_overview {
+  position: relative;
+}
+.section_overview-wrapper {
+  position: relative;
+}
+.section_overview-wrapper .svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+}
+@media screen and (max-width: 768px) {
+  .section_overview-wrapper .svg {
+    display: none;
+  }
+}
+.section_overview-wrapper--image {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.section_overview-wrapper--image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.section_overview-wrapper--content {
+  padding-top: 319px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1280px) {
+  .section_overview-wrapper--content {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_overview-wrapper--content {
+    gap: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_overview-wrapper--content {
+    padding-top: 200px;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_overview-wrapper--content {
+    padding-top: 150px;
+  }
+}
+.section_overview-wrapper--content_card {
+  width: 35%;
+}
+@media screen and (max-width: 1024px) {
+  .section_overview-wrapper--content_card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_overview-wrapper--content_card {
+    width: 100%;
+  }
+}
+.section_overview-wrapper--content_card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+@media screen and (max-width: 768px) {
+  .section_overview-wrapper--content_card .text {
+    gap: 25px;
+  }
+}
+.section_overview-wrapper--content_card .text .title {
+  text-transform: none;
+}
+.section_overview-wrapper--content_card.middle {
+  margin-left: auto;
 }
 
 * {

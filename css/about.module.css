@@ -1,5 +1,12 @@
 .section_about {
-  padding-top: 125px;
+  padding-top: 87px;
+  border-bottom: 1px solid rgb(107, 152, 133);
+  padding-bottom: 247px;
+}
+@media screen and (max-width: 480px) {
+  .section_about {
+    padding-bottom: 150px;
+  }
 }
 .section_about-wrapper--title {
   display: flex;
