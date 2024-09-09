@@ -200,9 +200,6 @@
 }
 .section_overview-wrapper--content_tape-content {
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
 }
 .section_overview-wrapper--content_tape-content--text {
   display: flex;
@@ -210,7 +207,6 @@
   justify-content: center;
   align-items: flex-start;
   height: 100%;
-  width: 40%;
 }
 @media screen and (max-width: 768px) {
   .section_overview-wrapper--content_tape-content--text {
@@ -219,6 +215,7 @@
   }
 }
 .section_overview-wrapper--content_tape-content--text .title {
+  width: 40%;
   color: #111;
 }
 @media screen and (max-width: 1280px) {
