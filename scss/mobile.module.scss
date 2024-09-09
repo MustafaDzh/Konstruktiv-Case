@@ -1,0 +1,95 @@
+.section_mobile {
+    padding-top: 410px;
+    background: #050505;
+    color: #FFF;
+    position: relative;
+
+    @media screen and (max-width:1024px) {
+        padding-top: 120px;
+    }
+
+    @media screen and (max-width:768px) {
+        padding-top: 80px;
+    }
+
+    @media screen and (max-width:480px) {
+        padding-top: 50px;
+    }
+
+    &-wrapper {
+        .svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: auto;
+        }
+
+        &--content {
+            min-height: 150vh;
+            height: 100%;
+            position: relative;
+
+            &_text {
+                display: flex;
+                flex-direction: column;
+                gap: 38px;
+
+                &-title {
+                    display: flex;
+                    align-items: center;
+
+                    .title {
+                        width: 237px;
+                    }
+
+
+                    @media screen and (max-width:1024px) {
+                        width: 95%;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                    }
+                }
+
+                .desc {
+                    width: 28%;
+                }
+            }
+
+            &_image {
+                position: absolute;
+                top: 50%;
+                left: 54%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+
+                @media screen and (max-width:480px) {
+                    padding-top: 30px;
+                }
+
+                img {
+                    z-index: 1;
+
+                    @media screen and (max-width:1024px) {
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        &--image {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    }
+}

@@ -2,8 +2,6 @@
     position: relative;
 
     &-wrapper {
-        position: relative;
-
         .svg {
             position: absolute;
             top: 50%;
@@ -198,8 +196,6 @@
                 }
 
                 &-content {
-                    position: relative;
-
                     &--text {
                         display: flex;
                         flex-direction: column;

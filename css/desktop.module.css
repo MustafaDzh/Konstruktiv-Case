@@ -5,6 +5,7 @@
   background: #050505;
   color: #FFF;
   border-bottom: 1px solid rgb(107, 152, 133);
+  padding-bottom: 200px;
 }
 @media screen and (max-width: 1024px) {
   .section_desktop {
