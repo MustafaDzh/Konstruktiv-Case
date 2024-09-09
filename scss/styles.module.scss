@@ -2,6 +2,7 @@
 @import "./about.module.scss";
 @import "./overview.module.scss";
 @import "./design.module.scss";
+@import "./sitemap.module.scss";
 
 * {
     padding: 0;
@@ -53,6 +54,11 @@ html body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+}
+
+.title-main{
+    display: flex;
+    align-items: center;
 }
 
 

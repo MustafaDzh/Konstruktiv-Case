@@ -634,7 +634,6 @@
 @media screen and (max-width: 768px) {
   .section_overview-wrapper--content_tape-content--text {
     padding-left: 0px;
-    align-items: flex-end;
   }
 }
 .section_overview-wrapper--content_tape-content--text .title {
@@ -658,7 +657,7 @@
 }
 @media screen and (max-width: 480px) {
   .section_overview-wrapper--content_tape-content--text .title {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .section_overview-wrapper--content_tape-content--text .title span {
@@ -718,7 +717,6 @@
   padding-top: 190px;
   background: #050505;
   color: #fff;
-  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   .section_design {
@@ -747,10 +745,6 @@
 }
 .section_design-wrapper--content_items > *:nth-child(2) {
   margin-top: 51.71px;
-}
-.section_design-wrapper--content_items .title {
-  display: flex;
-  align-items: center;
 }
 .section_design-wrapper--content_items .text-card {
   display: flex;
@@ -899,12 +893,12 @@
 }
 @media screen and (max-width: 768px) {
   .section_design-wrapper--content_tape-content--text .title {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 480px) {
   .section_design-wrapper--content_tape-content--text .title {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .section_design-wrapper--content_tape-content--text .title span {
@@ -960,6 +954,55 @@
   width: 100%;
 }
 
+.section_sitemap {
+  overflow: hidden;
+}
+.section_sitemap-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.section_sitemap-wrapper--map {
+  overflow-x: auto;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .section_sitemap-wrapper--map img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_sitemap-wrapper--map {
+    height: auto;
+  }
+}
+.section_sitemap-wrapper--map_text {
+  padding: 182px 0 0 373px;
+  width: 70%;
+}
+@media screen and (max-width: 1024px) {
+  .section_sitemap-wrapper--map_text {
+    padding: 120px 0px 0px 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_sitemap-wrapper--map_text {
+    padding: 120px 0px 0px 160px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_sitemap-wrapper--map_text {
+    padding: 120px 0px 30px 20px;
+    width: 100%;
+  }
+}
+.section_sitemap-wrapper--map_text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1010,6 +1053,11 @@ html body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+.title-main {
+  display: flex;
+  align-items: center;
 }
 
 html body a {

@@ -211,7 +211,6 @@
 @media screen and (max-width: 768px) {
   .section_overview-wrapper--content_tape-content--text {
     padding-left: 0px;
-    align-items: flex-end;
   }
 }
 .section_overview-wrapper--content_tape-content--text .title {
@@ -235,7 +234,7 @@
 }
 @media screen and (max-width: 480px) {
   .section_overview-wrapper--content_tape-content--text .title {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .section_overview-wrapper--content_tape-content--text .title span {

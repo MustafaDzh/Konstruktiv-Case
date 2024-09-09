@@ -2,7 +2,6 @@
     padding-top: 190px;
     background: #050505;
     color: #fff;
-    overflow: hidden;
 
     @media screen and (max-width:1024px) {
         padding-top: 100px;
@@ -34,11 +33,6 @@
 
                 &>*:nth-child(2) {
                     margin-top: 51.71px;
-                }
-
-                .title {
-                    display: flex;
-                    align-items: center;
                 }
 
                 .text-card {
@@ -204,11 +198,11 @@
                             }
 
                             @media screen and (max-width: 768px) {
-                                font-size: 24px;
+                                font-size: 22px;
                             }
 
                             @media screen and (max-width: 480px) {
-                                font-size: 16px;
+                                font-size: 15px;
                             }
 
                             span {
