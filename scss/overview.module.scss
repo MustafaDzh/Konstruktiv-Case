@@ -1,6 +1,5 @@
 .section_overview {
     position: relative;
-    padding-bottom: 200px;
 
     &-wrapper {
         position: relative;
@@ -233,9 +232,12 @@
                             }
 
                             @media screen and (max-width: 480px) {
-                                display: flex;
-                                justify-content: flex-end;
                                 font-size: 16px;
+                            }
+
+                            span {
+                                color: #DEDEDE;
+                                text-shadow: -1px 0 #111, 0 1px #111, 1px 0 #111, 0 -1px #111;
                             }
                         }
 
@@ -259,32 +261,30 @@
                             height: 379px;
                             overflow: hidden;
 
-                            // @media screen and (max-width:1024px) {
-                            //     width: 466px;
-                            //     height: 279px;
-                            // }
+                            @media screen and (max-width:1024px) {
+                                width: 466px;
+                                height: 279px;
+                            }
 
-                            // @media screen and (max-width:768px) {
-                            //     height: 325px;
-                            //     width: 300px;
+                            @media screen and (max-width:768px) {
+                                width: 406px;
+                                height: 269px;                        
+                            }
 
-                            // }
-
-                            // @media screen and (max-width:480px) {
-                            //     width: 180px;
-                            //     height: 205px;
-                            // }
-
-                            // @media screen and (max-width:350px) {
-                            //     width: 150px;
-                            //     height: 175px;
-                            // }
+                            @media screen and (max-width:480px) {
+                                width: 260px;
+                                height: 170px;
+                            }
 
                             &-img {
                                 position: absolute;
                                 top: 0;
                                 right: 0;
                                 width: 100%;
+
+                                img {
+                                    width: 100%;
+                                }
                             }
 
                         }

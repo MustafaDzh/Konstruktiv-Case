@@ -1,0 +1,163 @@
+.section_design {
+    padding-top: 190px;
+    background: #050505;
+    color: #fff;
+    overflow: hidden;
+    padding-bottom: 181px;
+
+    @media screen and (max-width:1024px) {
+        padding-top: 100px;
+    }
+
+    &-wrapper {
+        &--content {
+            svg {
+                @media screen and (max-width:480px) {
+                    width: 80%;
+                }
+            }
+
+            &_items {
+                display: flex;
+                flex-direction: column;
+
+                &>* {
+                    margin-top: 95px;
+
+                    @media screen and (max-width:480px) {
+                        margin-top: 30px;
+                    }
+                }
+
+                &>*:first-child {
+                    margin-top: 0;
+                }
+
+                &>*:nth-child(2) {
+                    margin-top: 51.71px;
+                }
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .text-card {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 37px;
+
+                    .desc {
+                        min-height: 127.287px;
+                        height: 100%;
+                    }
+
+                    .image {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &-design {
+                    .desc {
+                        width: 65%;
+                    }
+                }
+
+                &-fonts {
+                    .desc {
+                        width: 90%;
+                    }
+
+                    &-font {
+                        display: flex;
+                        width: 100%;
+                        gap: 16px;
+                        justify-content: space-between;
+
+                        @media screen and (max-width:768px) {
+                            flex-direction: column;
+                        }
+
+                        .card-right {
+                            display: flex;
+                            width: 100%;
+                            background: #272727;
+                            align-items: center;
+
+                            &--top {
+                                width: 100%;
+
+                                &_subtitle {
+                                    width: 100%;
+                                }
+
+                                &_subtitle {
+                                    text-align: end;
+                                }
+
+                                &_text {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    height: 189px;
+                                    padding: 20px 21px 0px 20px;
+
+                                    @media screen and (max-width:768px) {
+                                        height: 160px;
+                                    }
+
+                                    @media screen and (max-width:480px) {
+                                        height: 140px;
+                                    }
+                                }
+
+                                &_icon {
+                                    text-align: center;
+                                }
+
+                                &_desc {
+                                    display: flex;
+                                    gap: 39px;
+                                    padding: 124px 0px 32px 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-colors,
+                &-buttons {
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media screen and (max-width:768px) {
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                }
+
+                &-colors {
+                    padding-top: 27px;
+
+                    @media screen and (max-width:768px) {
+                        padding-top: 20px;
+                    }
+
+                    .desc {
+                        width: 65%;
+                    }
+                }
+
+                &-buttons {
+                    .text-card--right {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 26px;
+
+                    }
+                }
+            }
+        }
+    }
+}
