@@ -1,6 +1,11 @@
 .section_sitemap {
   overflow: hidden;
 }
+@media screen and (max-width: 480px) {
+  .section_sitemap {
+    padding-bottom: 30px;
+  }
+}
 .section_sitemap-wrapper {
   display: flex;
   flex-direction: column;
@@ -32,12 +37,12 @@
 }
 @media screen and (max-width: 768px) {
   .section_sitemap-wrapper--map_text {
-    padding: 120px 0px 0px 160px;
+    padding: 100px 0px 0px 160px;
   }
 }
 @media screen and (max-width: 1024px) {
   .section_sitemap-wrapper--map_text {
-    padding: 120px 0px 30px 20px;
+    padding: 70px 0px 30px 20px;
     width: 100%;
   }
 }

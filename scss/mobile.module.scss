@@ -4,8 +4,8 @@
     color: #FFF;
     position: relative;
 
-    @media screen and (max-width:1024px) {
-        padding-top: 240px;
+    @media screen and (max-width:1280px) {
+        padding-top: 270px;
     }
 
     @media screen and (max-width:480px) {
@@ -13,56 +13,68 @@
     }
 
     &-wrapper {
+        position: relative;
+
+        @media screen and (max-width:768px) {
+            padding: 0px !important;
+        }
+
         .svg {
             position: absolute;
-            top: 55%;
+            top: -10%;
             left: 50%;
-            transform: translate(-50%, -50%);
             height: auto;
             width: auto;
-
-            @media screen and (max-width:1024px) {
-                top: 35%;
-            }
 
             @media screen and (max-width:768px) {
                 display: none;
             }
 
             svg {
+                @media screen and (max-width:1280px) {
+                    height: 125vh;
+                }
+
                 @media screen and (max-width:1024px) {
-                    height: 75vh;
+                    height: 65vh;
                 }
             }
         }
 
         &--content {
-            min-height: 150vh;
-            height: 100%;
-            position: relative;
-
-            @media screen and (max-width:1024px) {
-                min-height: 100vh;
-            }
-
-            @media screen and (max-width:480px) {
-                min-height: 75vh;
+            @media screen and (max-width:768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
             }
 
             &_text {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                min-height: 150vh;
+                min-height: 165vh;
                 height: 100%;
                 position: relative;
+
+                @media screen and (min-width: 2560px) {
+                    min-height: 125vh;
+                }
+
+                @media screen and (max-width:1440px) {
+                    min-height: 200vh;
+                }
+
+                @media screen and (max-width:1280px) {
+                    min-height: 220vh;
+                }
 
                 @media screen and (max-width:1024px) {
                     min-height: 100vh;
                 }
 
-                @media screen and (max-width:480px) {
-                    min-height: 75vh;
+                @media screen and (max-width:768px) {
+                    min-height: unset;
+                    position: unset;
                 }
 
                 &-title {
@@ -105,14 +117,21 @@
 
                         @media screen and (max-width:480px) {
                             width: 100%;
+                            display: flex;
+                            align-items: center;
                         }
                     }
                 }
 
                 .text-svg {
                     position: absolute;
-                    bottom: 0;
+                    bottom: -200px;
                     left: 0;
+
+                    @media screen and (max-width:768px) {
+                        bottom: -20px;
+                        left: 50px;
+                    }
 
                     svg {
                         @media screen and (max-width:768px) {
@@ -121,6 +140,7 @@
 
                         @media screen and (max-width:480px) {
                             width: 60%;
+                            height: 100%;
                         }
                     }
                 }
@@ -128,24 +148,141 @@
 
             &_image {
                 position: absolute;
-                top: 50%;
-                left: 54%;
-                transform: translate(-50%, -50%);
+                top: 0%;
+                left: 20%;
                 z-index: 1;
 
                 @media screen and (max-width:768px) {
-                    top: 45%;
+                    position: unset;
+                    transform: unset;
+                }
+
+                @media screen and (max-width:480px) {
+                    top: 55%;
                 }
 
                 img {
                     z-index: 1;
 
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width:1280px) {
                         width: 100%;
                     }
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width:1024px) {
                         width: 90%;
+                    }
+                }
+            }
+
+            &_tape {
+                background: #DEDEDE;
+                height: 280px;
+                display: flex;
+
+                @media screen and (max-width: 1024px) {
+                    height: 220px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    height: 150px;
+                }
+
+                @media screen and (max-width: 480px) {
+                    height: 100px;
+                }
+
+                &-content {
+                    position: relative;
+
+                    &--text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                        height: 100%;
+
+                        @media screen and (max-width:768px) {
+                            padding-left: 0px;
+                            align-items: flex-end;
+                        }
+
+                        .title {
+                            width: 45%;
+                            color: #111;
+
+                            @media screen and (max-width: 1280px) {
+                                font-size: 35px;
+                            }
+
+                            @media screen and (max-width: 1024px) {
+                                font-size: 30px;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 22px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                font-size: 15px;
+                            }
+
+                            span {
+                                color: #DEDEDE;
+                                text-shadow: -1px 0 #111, 0 1px #111, 1px 0 #111, 0 -1px #111;
+                            }
+                        }
+
+                        @media screen and (max-width:1024px) {
+                            padding-top: 20px;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            padding-top: 10px;
+                        }
+                    }
+
+                    &--image {
+                        position: absolute;
+                        bottom: -80px;
+                        left: 0;
+
+                        &_wrapper {
+                            position: relative;
+                            overflow: hidden;
+                            width: 643px;
+                            height: 429px;
+
+                            @media screen and (max-width:1280px) {
+                                width: 593px;
+                            }
+
+                            @media screen and (max-width:1024px) {
+                                width: 430px;
+                                height: 336px;
+                            }
+
+                            @media screen and (max-width:768px) {
+                                width: 350px;
+                                height: 280px;
+                            }
+
+                            @media screen and (max-width:480px) {
+                                width: 200px;
+                                height: 200px;
+                            }
+
+                            &-img {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 100%;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                        }
                     }
                 }
             }
@@ -165,4 +302,6 @@
             }
         }
     }
+
+
 }

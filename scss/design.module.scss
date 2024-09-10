@@ -9,11 +9,6 @@
 
     &-wrapper {
         &--content {
-            svg {
-                @media screen and (max-width:480px) {
-                    width: 80%;
-                }
-            }
 
             &_items {
                 display: flex;
@@ -23,7 +18,7 @@
                     margin-top: 95px;
 
                     @media screen and (max-width:480px) {
-                        margin-top: 30px;
+                        margin-top: 0px;
                     }
                 }
 
@@ -43,6 +38,10 @@
                     .desc {
                         min-height: 127.287px;
                         height: 100%;
+
+                        @media screen and (max-width:480px) {
+                            min-height: unset;
+                        }
                     }
 
                     .image {
@@ -83,6 +82,12 @@
                             background: #272727;
                             align-items: center;
 
+                            &:nth-child(1) {
+                                @media screen and (max-width:480px) {
+                                    margin-top: 20px;
+                                }
+                            }
+
                             &--top {
                                 width: 100%;
 
@@ -111,12 +116,28 @@
 
                                 &_icon {
                                     text-align: center;
+
+                                    svg {
+                                        width: 100%;
+
+                                        @media screen and (max-width:480px) {
+                                            width: 80%;
+                                        }
+                                    }
                                 }
 
                                 &_desc {
                                     display: flex;
                                     gap: 39px;
                                     padding: 124px 0px 32px 40px;
+
+                                    @media screen and (max-width:768px) {
+                                        padding: 80px 20px 20px 30px;
+                                    }
+
+                                    svg {
+                                        width: 100%;
+                                    }
                                 }
                             }
                         }
@@ -130,7 +151,11 @@
 
                     @media screen and (max-width:768px) {
                         flex-direction: column;
-                        gap: 20px;
+                        gap: 40px;
+                    }
+
+                    @media screen and (max-width:480px) {
+                        gap: 0px;
                     }
                 }
 
@@ -148,6 +173,12 @@
                             width: 100%;
                         }
                     }
+
+                    svg {
+                        @media screen and (max-width:480px) {
+                            width: 100%;
+                        }
+                    }
                 }
 
                 &-buttons {
@@ -155,6 +186,16 @@
                         display: flex;
                         flex-direction: column;
                         gap: 26px;
+
+                        @media screen and (max-width:480px) {
+                            gap: 0;
+                        }
+
+                        svg {
+                            width: 100%;
+                            height: 100%;
+
+                        }
 
                     }
                 }
@@ -172,10 +213,12 @@
 
                 @media screen and (max-width: 768px) {
                     height: 150px;
+                    margin-top: 100px;
                 }
 
                 @media screen and (max-width: 480px) {
                     height: 100px;
+                    margin-top: 70px;
                 }
 
                 &-content {
