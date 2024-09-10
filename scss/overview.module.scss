@@ -100,6 +100,7 @@
 
                     @media screen and (max-width: 480px) {
                         padding-top: 50px;
+                        justify-content: flex-start;
                     }
 
                     img {
@@ -260,7 +261,7 @@
 
                             @media screen and (max-width:768px) {
                                 width: 406px;
-                                height: 269px;                        
+                                height: 269px;
                             }
 
                             @media screen and (max-width:480px) {
