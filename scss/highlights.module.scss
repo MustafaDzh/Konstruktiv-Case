@@ -2,144 +2,285 @@
     padding-top: 270px;
     overflow: hidden;
 
+    @media screen and (max-width:1280px) {
+        padding-top: 200px;
+    }
+
     &-wrapper {
         &--content {
-            display: flex;
-            flex-direction: column;
-            gap: 175px;
+            position: relative;
 
             &_top {
-                &-text {
-                    font-size: 36px;
-                    line-height: 110%;
-                    padding-left: 119px;
+                display: flex;
+                flex-direction: column;
+                gap: 175px;
 
-                    @media screen and (max-width: 1280px) {
-                        font-size: 30px;
-                    }
+                @media screen and (max-width:1024px) {
+                    gap: 100px;
+                }
 
-                    @media screen and (max-width: 1024px) {
-                        font-size: 27px;
-                    }
+                &-top {
+                    &--text {
+                        font-size: 36px;
+                        line-height: 110%;
+                        padding-left: 119px;
 
-                    @media screen and (max-width: 768px) {
-                        font-size: 20px;
-                    }
-
-                    @media screen and (max-width: 480px) {
-                        font-size: 16px;
-                    }
-
-                    &--title {
-                        display: flex;
-                        align-items: center;
-                        width: 237px;
-                    }
-
-                    &--desc {
-                        margin-top: 70px;
-                        min-height: 189px;
-                        height: 100%;
-                        width: 44%;
+                        @media screen and (max-width: 1280px) {
+                            padding-left: 0px;
+                            font-size: 30px;
+                        }
 
                         @media screen and (max-width: 1024px) {
-                            width: 100%;
+                            font-size: 27px;
                         }
 
                         @media screen and (max-width: 768px) {
-                            min-height: 100px;
+                            font-size: 20px;
                         }
 
                         @media screen and (max-width: 480px) {
-                            margin-top: 30px;
-                            width: 98%;
+                            font-size: 16px;
                         }
 
-                        span {
-                            color: #f9f9f9;
-                            text-shadow: -1px 0 #2E3140, 0 1px #2E3140, 1px 0 #2E3140, 0 -1px #2E3140;
+                        &_title {
+                            display: flex;
+                            align-items: center;
+                            width: 237px;
+                        }
+
+                        &_desc {
+                            margin-top: 70px;
+                            min-height: 189px;
+                            height: 100%;
+                            width: 44%;
+
+                            @media screen and (max-width: 1024px) {
+                                width: 100%;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                min-height: 100px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                margin-top: 30px;
+                                width: 98%;
+                            }
+
+                            span {
+                                color: #f9f9f9;
+                                text-shadow: -1px 0 #2E3140, 0 1px #2E3140, 1px 0 #2E3140, 0 -1px #2E3140;
+                            }
                         }
                     }
-                }
 
-                &-video {
-                    width: 100%;
-                    position: relative;
-                    overflow: hidden;
-                    height: 801px;
+                    &--video {
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        height: 801px;
+                        border-radius: 6px;
 
-                    #my-video {
-                        position: absolute;
-                        top: 0;
+                        #my-video {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .play-btn,
+                        .pause-btn {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: transparent;
+                            border: none;
+                            cursor: pointer;
+                            z-index: 2;
+                            transition: opacity 0.3s ease;
+                        }
+
+                        .play-btn {
+                            opacity: 1;
+                        }
+
+                        .pause-btn {
+                            opacity: 0;
+                        }
+
+                        &:hover .play-btn {
+                            opacity: 1;
+                        }
+
+                        &:hover .pause-btn {
+                            opacity: 1;
+                        }
+
+                        .play-btn.hidden {
+                            opacity: 0;
+                        }
+
+                        .pause-btn.hidden {
+                            opacity: 0;
+                        }
+
+                        @media screen and (max-width: 878px) {
+                            height: 400px;
+
+                            .play-btn svg,
+                            .pause-btn svg {
+                                width: 60%;
+                                height: 60%;
+                            }
+                        }
+                    }
+
+                    .video-js .vjs-tech {
+                        object-fit: cover;
                         width: 100%;
                         height: 100%;
                     }
 
-                    .play-btn,
-                    .pause-btn {
+                    .vjs-big-play-button {
+                        display: none;
+                    }
+
+                    .vjs-control-bar {
+                        display: none !important;
+                    }
+                }
+
+                &-bottom {
+                    display: flex;
+                    margin-left: 117px;
+
+                    &--desc {
+                        width: 100%;
+
+                        @media screen and (max-width:1440px) {
+                            padding-left: 0px;
+                        }
+                    }
+
+                    &--image {
+                        width: 100%;
+                        transform: translate(-90px, 140px);
+                        z-index: -1;
+                    }
+                }
+
+            }
+
+            &_tape {
+                background: #DEDEDE;
+                height: 280px;
+                display: flex;
+
+                @media screen and (max-width: 1024px) {
+                    height: 220px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    height: 150px;
+                    margin-top: 100px;
+                }
+
+                @media screen and (max-width: 480px) {
+                    height: 100px;
+                    margin-top: 70px;
+                }
+
+                &-content {
+                    position: relative;
+
+                    &--text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        height: 100%;
+
+                        @media screen and (max-width:768px) {
+                            padding-left: 0px;
+                            align-items: flex-end;
+                        }
+
+                        .title {
+                            width: 50%;
+                            color: #111;
+
+                            @media screen and (max-width: 1280px) {
+                                font-size: 35px;
+                            }
+
+                            @media screen and (max-width: 1024px) {
+                                font-size: 30px;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 22px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                font-size: 15px;
+                            }
+
+                            span {
+                                color: #DEDEDE;
+                                text-shadow: -1px 0 #111, 0 1px #111, 1px 0 #111, 0 -1px #111;
+                            }
+                        }
+
+                        @media screen and (max-width:1024px) {
+                            padding-top: 20px;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            padding-top: 10px;
+                        }
+                    }
+
+                    &--image {
                         position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        background-color: transparent;
-                        border: none;
-                        cursor: pointer;
-                        z-index: 2;
-                        transition: opacity 0.3s ease;
-                    }
+                        top: 0px;
+                        right: 0;
 
-                    .play-btn {
-                        opacity: 1;
-                    }
+                        &_wrapper {
+                            position: relative;
+                            overflow: hidden;
+                            width: 634px;
+                            height: 418px;
 
-                    .pause-btn {
-                        opacity: 0;
-                    }
+                            @media screen and (max-width:1024px) {
+                                width: 477px;
+                                height: 336px;
+                            }
 
-                    &:hover .play-btn {
-                        opacity: 1;
-                    }
+                            @media screen and (max-width:768px) {
+                                width: 350px;
+                                height: 216px;
+                            }
 
-                    &:hover .pause-btn {
-                        opacity: 1;
-                    }
+                            @media screen and (max-width:480px) {
+                                width: 201px;
+                                height: 227px;
+                            }
 
-                    .play-btn.hidden {
-                        opacity: 0;
-                    }
+                            &-img {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 1169px;
 
-                    .pause-btn.hidden {
-                        opacity: 0;
-                    }
+                                img {
+                                    width: 100%;
+                                }
+                            }
 
-                    @media screen and (max-width: 878px) {
-                        height: 400px;
-
-                        .play-btn svg,
-                        .pause-btn svg {
-                            width: 60%;
-                            height: 60%;
                         }
                     }
                 }
-
-                .video-js .vjs-tech {
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                }
-
-                .vjs-big-play-button {
-                    display: none;
-                }
-
-                .vjs-control-bar {
-                    display: none !important;
-                }
-            }
-
-            &_bottom {
-                display: flex;
             }
         }
     }

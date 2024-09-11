@@ -182,7 +182,6 @@
                 background: #DEDEDE;
                 height: 280px;
                 display: flex;
-                margin-top: 105px;
 
                 @media screen and (max-width: 1024px) {
                     height: 220px;
@@ -194,10 +193,11 @@
 
                 @media screen and (max-width: 480px) {
                     height: 100px;
-                    margin-top: 50px;
                 }
 
                 &-content {
+                    position: relative;
+
                     &--text {
                         display: flex;
                         flex-direction: column;
@@ -210,7 +210,7 @@
                         }
 
                         .title {
-                            width: 40%;
+                            width: 45%;
                             color: #111;
 
                             @media screen and (max-width: 1280px) {
@@ -251,8 +251,8 @@
 
                         &_wrapper {
                             position: relative;
-                            width: 566px;
-                            height: 379px;
+                            width: 605.325px;
+                            height: 322.016px;
                             overflow: hidden;
 
                             @media screen and (max-width:1024px) {
@@ -261,18 +261,18 @@
                             }
 
                             @media screen and (max-width:768px) {
-                                width: 406px;
-                                height: 269px;
+                                width: 330px;
+                                height: 180px;
                             }
 
                             @media screen and (max-width:480px) {
-                                width: 260px;
+                                width: 200px;
                                 height: 170px;
                             }
 
                             &-img {
                                 position: absolute;
-                                top: 0;
+                                bottom: -5px;
                                 right: 0;
                                 width: 100%;
 
