@@ -15,10 +15,6 @@
     &-wrapper {
         position: relative;
 
-        @media screen and (max-width:768px) {
-            padding: 0px !important;
-        }
-
         .svg {
             position: absolute;
             top: -10%;

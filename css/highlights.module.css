@@ -7,6 +7,21 @@
     padding-top: 200px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .section_highlights {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_highlights {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_highlights {
+    padding-top: 50px;
+  }
+}
 .section_highlights-wrapper--content {
   position: relative;
 }
@@ -18,6 +33,11 @@
 @media screen and (max-width: 1024px) {
   .section_highlights-wrapper--content_top {
     gap: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_highlights-wrapper--content_top {
+    gap: 50px;
   }
 }
 .section_highlights-wrapper--content_top-top--text {
@@ -60,11 +80,6 @@
 @media screen and (max-width: 1024px) {
   .section_highlights-wrapper--content_top-top--text_desc {
     width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section_highlights-wrapper--content_top-top--text_desc {
-    min-height: 100px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -145,6 +160,16 @@
   display: flex;
   margin-left: 117px;
 }
+@media screen and (max-width: 1024px) {
+  .section_highlights-wrapper--content_top-bottom {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_highlights-wrapper--content_top-bottom {
+    flex-direction: column;
+  }
+}
 .section_highlights-wrapper--content_top-bottom--desc {
   width: 100%;
 }
@@ -157,6 +182,24 @@
   width: 100%;
   transform: translate(-90px, 140px);
   z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .section_highlights-wrapper--content_top-bottom--image {
+    transform: translate(-50px, 100px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_highlights-wrapper--content_top-bottom--image {
+    transform: translate(0px, 160px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_highlights-wrapper--content_top-bottom--image {
+    transform: translate(0px, 100px);
+  }
+}
+.section_highlights-wrapper--content_top-bottom--image img {
+  width: -webkit-fill-available;
 }
 .section_highlights-wrapper--content_tape {
   background: #DEDEDE;
@@ -193,11 +236,10 @@
 @media screen and (max-width: 768px) {
   .section_highlights-wrapper--content_tape-content--text {
     padding-left: 0px;
-    align-items: flex-end;
   }
 }
 .section_highlights-wrapper--content_tape-content--text .title {
-  width: 50%;
+  width: 45%;
   color: #111;
 }
 @media screen and (max-width: 1280px) {
@@ -267,7 +309,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 1169px;
 }
 .section_highlights-wrapper--content_tape-content--image_wrapper-img img {
   width: 100%;

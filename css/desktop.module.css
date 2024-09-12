@@ -173,7 +173,7 @@
 }
 @media screen and (max-width: 768px) {
   .section_desktop-wrapper--content_bottom {
-    gap: 20px;
+    gap: 40px;
   }
 }
 .section_desktop-wrapper--content_bottom-text {

@@ -1,0 +1,117 @@
+.section_showcase {
+    width: 100%;
+    padding-top: 127px;
+    margin: 0 auto;
+    background: #050505;
+    color: #fff;
+
+    @media screen and (max-width:768px) {
+        padding-top: 50px;
+    }
+
+    @media screen and (max-width:480px) {
+        padding-top: 20px;
+    }
+
+    &-wrapper {
+        width: 75%;
+        margin: 0 auto;
+
+        @media screen and (max-width:480px) {
+            width: 90%;
+        }
+
+        &--content {
+            display: flex;
+
+            @media screen and (max-width:1024px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @media screen and (max-width:768px) {
+                gap: 50px;
+            }
+
+            &_text {
+                display: flex;
+                flex-direction: column;
+                gap: 119px;
+
+                @media screen and (max-width:1024px) {
+                    gap: 50px;
+                    align-items: center;
+                }
+
+                .subtitle {
+                    width: 70%;
+                    font-size: 20px;
+
+                    @media screen and (max-width:1024px) {
+                        font-size: 16px;
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        font-size: 15px;
+                    }
+
+                    @media screen and (max-width:480px) {
+                        font-size: 14px;
+                    }
+                }
+
+                .title {
+                    font-size: 36px;
+                    line-height: 110%;
+                    width: 50%;
+
+                    span {
+                        color: #050505;
+                        text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+                    }
+
+                    @media screen and (max-width:1280px) {
+                        font-size: 26px;
+                    }
+
+                    @media screen and (max-width:1024px) {
+                        font-size: 22px;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        font-size: 18px;
+                    }
+
+                    @media screen and (max-width:480px) {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            &_image {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    @media screen and (max-width:1024px) {
+                        width: 80%;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        width: 70%;
+                    }
+
+                    @media screen and (max-width:480px) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
